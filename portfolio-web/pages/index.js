@@ -1,8 +1,11 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import Link from 'next/link'
+import About from 'components/about'
+import Start from '@/components/start'
+import Education from '@/components/education'
+import Jobs from '@/components/jobs'
+import Projects from '@/components/projects'
+import Contact from '@/components/contact'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,19 +13,12 @@ export default function Home() {
   return (
     <>
       <Head>Portfolio website</Head>
-      <div>Start</div>
-      <h1 className="title">
-        Read <Link href="/about">this page!</Link>
-      </h1>
-      <div>
-        <Link href="/contact">Contacts page</Link>
-      </div>
-      <Image 
-        src="/images/profile_image.jpg" // Route of the image file
-        height={144} // Desired size with correct aspect ratio
-        width={144} // Desired size with correct aspect ratio
-        alt="Your Name"
-      ></Image>
+      <Start></Start>
+      <About></About>
+      <Education></Education>
+      <Jobs></Jobs>
+      <Projects></Projects>
+      <Contact></Contact>
     </>
   )
 }
