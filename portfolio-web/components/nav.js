@@ -3,8 +3,10 @@ import Link from "next/link";
 import './Nav.module.css'
 export default function Nav(){
     return(
-        <div>
-            <nav className="flex">
+        <div className="">
+            <nav className="flex flex-row justify-between">
+                <div>"Mohit Nandargi"</div>
+                <div className="flex flex-row ">
                 {navLinks.map((link, index) => {
                 return (
                     <ul>
@@ -14,6 +16,8 @@ export default function Nav(){
                     </ul>
                 );
                 })}
+                </div>
+                
             </nav>
         </div>
     )
