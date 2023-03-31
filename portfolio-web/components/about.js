@@ -3,10 +3,10 @@ export default function About()
 {
     return(
         <div className=''>
-            <div className="text-3xl"> About me </div>
+            <div className="text-3xl text-green"> About me </div>
             <div className='flex p-2'>
-                <div className='basis-2/3'>
-                    <div className="text-xl">Hi I am Mohit Nandargi</div>
+                <div className='basis-2/3 text-slate'>
+                    <div className="">Hi I am Mohit Nandargi</div>
                     <div>Im a full stack developer based in Hyderabad,India.
                         I have worked with various webframeworks and have created worthy projects with each of them.
                         I'm also a vivid problem solver.</div>
