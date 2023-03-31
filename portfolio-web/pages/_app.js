@@ -3,7 +3,7 @@ import '../styles/globals.css'
 
 export default function App({ Component, pageProps }) {
   return(
-    <div className='p-6'>
+    <div className="p-6" >
     <Layout >
       <Component {...pageProps} />
     </Layout>
